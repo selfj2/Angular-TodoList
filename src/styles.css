@@ -1,1 +1,119 @@
-/* You can add global styles to this file, and also import other style files */
+
+body{
+display: flex;
+justify-content: center;
+left: 50%;
+background-image: linear-gradient(to right, #fa72b1 , #ff0055);
+}
+
+/* section{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 50px;
+    width: 100%;
+}
+
+input{
+    padding: 3%;
+}
+
+ul{
+   text-decoration: 
+
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.complete{
+
+    color: #d33f58;
+    border: 1px solid #d33f58;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+add-btn{
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #d33f58; 
+}
+
+.mark{
+    border: none;
+    font-size: 18px;
+}
+
+.strick{
+    text-decoration: line-through;
+} */
+
+html,
+body{
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+input{
+    height: 20px;
+
+}
+
+.complete{
+
+    color: #d33f58;
+    border: 1px solid #d33f58;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.mark{
+    border: none;
+    font-size: 18px;
+}
+
+.add-btn{
+    margin-top: 15px;
+    height: 30px;
+    background-color: #ff0055;
+    border-radius: 4px;
+}
+
+ol{
+    padding-left: 15px;
+    margin: 5px 0;
+}
+
+li{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+span{
+    width: 50%;
+}
+
+.strikethrough{
+    text-decoration: line-through;
+}
