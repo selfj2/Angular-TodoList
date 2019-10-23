@@ -15,7 +15,7 @@ export class TodoComponent {
   completed: boolean = true;
   newTask: string = '';
   task: string = '';
-  filterText: string;
+  filterText: string = '';
 
   toDos:Todo[] = [
     { completed: false, task:'Feed the baby'},
@@ -27,7 +27,8 @@ export class TodoComponent {
 
   filteredTodos: Todo[] = [...this.toDos];
 
-   filter(todos: Todo, task) {
+  
+  filter() {
     this.filteredTodos = this.toDos.filter(
         item => item.task.toLowerCase().includes(this.filterText.toLowerCase()) 
     );
@@ -44,17 +45,17 @@ export class TodoComponent {
     };
 
     this.toDos.push(newItem);
-    this.filter(this.filterText);
+    this.filter();
     this.newTask = null;
     
   };
 
-  removeTask(i){
-    this.toDos.splice(i,1);
+  removeTask(i: any){
+    this.filteredTodos.splice(i,1);
 }
 
   completeTask(i){
-    this.toDos[i].completed = true;
+    this.filteredTodos[i].completed = true;
   }
 
 
